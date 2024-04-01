@@ -1,1 +1,13 @@
-<p>header works!</p>
+<header class="top-0 sticky bg-black h-[68px] z-10 flex items-center justify-between">
+    <div class="flex gap-4">
+        <img width="100" src="../../../../assets/logo.png" alt="Netflix">
+        <ul class="flex item-center" *ngFor="let item of navList">
+            <li class="text-white text-sm cursor-pointer hover:text-gray-400 transition-ease-in-out-[1s]">
+                {{item}}
+            </li>
+        </ul>
+    </div>
+    <div class="user text-white px-4">
+        <span>Welcome <strong>Muhammed</strong></span>
+    </div>
+</header>
